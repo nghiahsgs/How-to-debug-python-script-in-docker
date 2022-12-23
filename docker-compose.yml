@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  testdebugflaskapp:
+    image: testdebugpythonscript
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    volumes:
+      - .:/home/app
+    ports:
+      - 5678:5678
