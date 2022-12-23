@@ -1,11 +1,6 @@
+Step1: Start docker compose
 ```
-python3 -m debugpy --listen localhost:5678 --wait-for-client main.py
-```
-
-```
-docker build . -t test_debug_python
+docker-compose up --build
 ```
 
-```
-docker run -p 5678:5678 test_debug_python
-```
+Step2: Add break point and run debug in vs code
